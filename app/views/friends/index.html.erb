@@ -1,0 +1,24 @@
+<table class="table table-secondary table-striped table-borderless table-hover">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+      <% @friends.each do |friend| %>
+        <tr class="table-warning">
+          <td><%= link_to friend.first_name, friend %></td>
+          <td><%= link_to friend.last_name, friend %></td>
+          <td><%= friend.email %></td>
+          <td><%= friend.phone %></td>
+          <td><%= friend.address %></td>
+        </tr>
+      <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Friend', new_friend_path, class:"btn btn-secondary" %>
