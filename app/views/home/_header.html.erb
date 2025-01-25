@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-terjtiary">
+<nav class="navbar bg-secondary navbar-expand-lg bg-body-terjtiary">
   <div class="container-fluid">
-    <%= link_to "F.R.I.E.N.D.S", root_path, class:"navbar-brand" %>
+    <%= link_to "F.R.I.E.N.D.S", root_path, class:"navbar-brand text-white" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,35 +9,37 @@
 
         <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to "Friends List", friends_path, class:"nav-link" %>
+            <%= link_to "Friends List", friends_path, class:"nav-link text-white" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Add Friend", new_friend_path, class:"nav-link" %>
+            <%= link_to "Add Friend", new_friend_path, class:"nav-link text-white" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link text-white" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About Us", home_about_path, class:"nav-link text-white" %>
           </li>
           <li class="nav-item">
             <% link_to "Sign Out", destroy_user_session_path, method: :delete, class:"nav-link" %>
-            <%= link_to "Sign Out", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
+            <%= link_to "Sign Out", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link text-white" %>
           </li>
-          <li class="nav-item">
-            <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link" %>
-          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search for a friend..." aria-label="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
+            <%= link_to "Sign Up", new_user_registration_path, class:"nav-link text-white" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Sign In", new_user_session_path, class:"nav-link" %>
+            <%= link_to "Sign In", new_user_session_path, class:"nav-link text-white" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About Us", home_about_path, class:"nav-link text-white" %>
           </li>
         <% end %>
-
-        <li class="nav-item">
-          <%= link_to "About Us", home_about_path, class:"nav-link" %>
-        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>

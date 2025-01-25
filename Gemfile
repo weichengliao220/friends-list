@@ -13,6 +13,8 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem "sassc-rails"
+gem 'pg', '~> 1.5', '>= 1.5.9'
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
@@ -20,7 +22,7 @@ end
 
 group :development do
   gem "web-console"
-  gem "sqlite3", ">= 1.4"
+  gem 'pg', '~> 1.5', '>= 1.5.9'
 end
 
 group :production do
