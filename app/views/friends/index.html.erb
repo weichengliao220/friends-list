@@ -10,13 +10,15 @@
   </thead>
   <tbody class="table-group-divider">
       <% @friends.each do |friend| %>
-        <tr class="table-warning">
-          <td><%= link_to friend.first_name, friend %></td>
-          <td><%= link_to friend.last_name, friend %></td>
-          <td><%= friend.email %></td>
-          <td><%= friend.phone %></td>
-          <td><%= friend.address %></td>
-        </tr>
+        <% if friend.user == current_user %>
+          <tr class="table-warning">
+            <td><%= link_to friend.first_name, friend %></td>
+            <td><%= link_to friend.last_name, friend %></td>
+            <td><%= friend.email %></td>
+            <td><%= friend.phone %></td>
+            <td><%= friend.address %></td>
+          </tr>
+        <% end %>
       <% end %>
   </tbody>
 </table>
