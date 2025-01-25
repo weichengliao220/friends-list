@@ -13,6 +13,7 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem 'devise', '~> 4.9', '>= 4.9.4'
+gem "sassc-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
