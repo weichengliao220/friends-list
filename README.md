@@ -1,24 +1,9 @@
-# README
+# Friends List App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello, my name is Brian Liao.
 
-Things you may want to cover:
+I just recently graduated from Le Wagon Tokyo, the coding bootcamp, and am currently looking for a new job in the field of web development.
 
-* Ruby version
+I spent a several days working on this small side-project, which serves as a practice and review for Ruby on Rails framework that was learned and used during the bootcamp.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thank you!
