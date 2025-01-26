@@ -14,7 +14,7 @@ gem "bootsnap", require: false
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem "sassc-rails"
 gem 'pg', '~> 1.5', '>= 1.5.9'
-
+gem 'faker'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
