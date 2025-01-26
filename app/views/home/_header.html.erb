@@ -1,6 +1,8 @@
 <nav class="navbar bg-secondary navbar-expand-lg bg-body-terjtiary">
   <div class="container-fluid">
-    <%= link_to "F.R.I.E.N.D.S", root_path, class:"navbar-brand text-white" %>
+    <%= link_to root_path do %>
+      <%= image_tag "friends_logo2.png", alt:"Friends Logo", style:"width: 150px; height: auto;" %>
+    <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
