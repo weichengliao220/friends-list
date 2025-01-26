@@ -1,26 +1,28 @@
-<table class="table table-secondary table-striped table-borderless table-hover">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone Number</th>
-      <th scope="col">Address</th>
-    </tr>
-  </thead>
-  <tbody class="table-group-divider">
-      <% @friends.each do |friend| %>
-        <% if friend.user == current_user %>
-          <tr class="table-warning">
-            <td><%= link_to friend.first_name + ' ' + friend.last_name, friend %></td>
-            <td><%= friend.email %></td>
-            <td><%= friend.phone %></td>
-            <td><%= friend.address %></td>
-          </tr>
+<div class="container">
+  <table class="table table-secondary table-striped table-borderless table-hover", style="border-radius: 10px 10px 0px 0px; border-collapse: collapse; overflow: hidden;">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <% @friends.each do |friend| %>
+          <% if friend.user == current_user %>
+            <tr class="table-warning">
+              <td><%= link_to friend.first_name + ' ' + friend.last_name, friend %></td>
+              <td><%= friend.email %></td>
+              <td><%= friend.phone %></td>
+              <td><%= friend.address %></td>
+            </tr>
+          <% end %>
         <% end %>
-      <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<div class="d-flex justify-content-center mt-5">
-  <%= link_to 'Add a new friend', new_friend_path, class:"btn btn-secondary" %>
+  <div class="d-flex justify-content-center mt-5">
+    <%= link_to 'Add a new friend', new_friend_path, class:"btn btn-secondary" %>
+  </div>
 </div>
