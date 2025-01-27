@@ -4,7 +4,14 @@ class FriendsController < ApplicationController
   before_action :correct_user, only: %i[ edit update destroy ]
   # GET /friends or /friends.json
   def index
-    @friends = Friend.paginate(page: params[:page], per_page: 12)
+    if params[:query].present?
+      @friends = Friend.where("LOWER(first_name) LIKE ? OR LOWER(last_name) LIKE ? OR LOWER(email) LIKE ?",
+                              "%#{params[:query].downcase}%", "%#{params[:query].downcase}%", "%#{params[:query].downcase}%")
+                      .paginate(page: params[:page], per_page: 12)
+    else
+      @friends = Friend.paginate(page: params[:page], per_page: 12)
+    end
+    puts "Filtered friends: #{@friends.inspect}"
   end
 
   # GET /friends/1 or /friends/1.json
