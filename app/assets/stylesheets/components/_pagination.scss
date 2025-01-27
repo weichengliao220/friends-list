@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;  /* Full height for the viewport */
+  margin: 0;     /* Remove any default margin */
+}
+
+.d-flex.flex-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensures the container fills the viewport */
+}
+
+.container {
+  flex-grow: 1;  /* Allows the content to take up remaining space */
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom of the page */
+  padding: 30px;
+  padding: 10px;    /* Add some padding for spacing */
+  text-align: center;
+}

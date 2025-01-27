@@ -15,6 +15,7 @@ gem 'devise', '~> 4.9', '>= 4.9.4'
 gem "sassc-rails"
 gem 'pg', '~> 1.5', '>= 1.5.9'
 gem 'faker'
+gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]

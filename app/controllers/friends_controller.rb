@@ -4,7 +4,7 @@ class FriendsController < ApplicationController
   before_action :correct_user, only: %i[ edit update destroy ]
   # GET /friends or /friends.json
   def index
-    @friends = Friend.all
+    @friends = Friend.paginate(page: params[:page], per_page: 12)
   end
 
   # GET /friends/1 or /friends/1.json

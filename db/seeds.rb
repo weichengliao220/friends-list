@@ -34,7 +34,7 @@ friends_data.each do |friend_data|
   Friend.create!(friend_data)
 end
 
-5.times do
+30.times do
   Friend.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
