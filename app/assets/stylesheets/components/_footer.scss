@@ -11,3 +11,17 @@
 // footer .pagination {
 //   margin-top: 20px;
 // }
+
+/* Footer Styling */
+.footer {
+  background-color: #6c757d; /* Grey background */
+  color: white;              /* White text */
+  padding: 10px 0;           /* Vertical padding */
+  text-align: center;        /* Center the text horizontally */
+  margin-top: auto;          /* Push the footer to the bottom of the container */
+}
+
+/* Optional: To ensure the footer doesn't overlap content */
+body {
+  padding-bottom: 0px;  /* Add space at the bottom of the page */
+}
