@@ -19,3 +19,30 @@
 //   padding: 10px;    /* Add some padding for spacing */
 //   text-align: center;
 // }
+
+.pagination .first .page-link {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.pagination .last .page-link {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.pagination .page-link {
+  color: black !important;         // Keep the text grey
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-link:focus,
+.pagination .page-link:active {
+  background-color: grey !important;  // Keep the background grey
+  border-color: grey !important;      // Keep the border grey
+  color: white !important;            // Ensure text is visible
+  box-shadow: none !important;        // Remove Bootstrap's default blue glow
+}

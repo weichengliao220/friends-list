@@ -35,7 +35,7 @@ class FriendsController < ApplicationController
 
     respond_to do |format|
       if @friend.save
-        format.html { redirect_to @friend, notice: "Friend was successfully created." }
+        format.html { redirect_to @friend, notice: "Friend was successfully added." }
         format.json { render :show, status: :created, location: @friend }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -62,7 +62,7 @@ class FriendsController < ApplicationController
     @friend.destroy!
 
     respond_to do |format|
-      format.html { redirect_to friends_path, status: :see_other, notice: "Friend was successfully destroyed." }
+      format.html { redirect_to friends_path, status: :see_other, notice: "Friend was successfully deleted." }
       format.json { head :no_content }
     end
   end
