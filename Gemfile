@@ -17,6 +17,7 @@ gem 'pg', '~> 1.5', '>= 1.5.9'
 gem 'faker'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 gem 'bootstrap', '~> 5.0'
+gem 'hotwire-rails'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]

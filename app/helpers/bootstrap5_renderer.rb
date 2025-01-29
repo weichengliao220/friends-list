@@ -12,15 +12,6 @@ class Bootstrap5Renderer < WillPaginate::ActionView::LinkRenderer
     tag(:li, link(page, page == current_page ? "#" : url(page), class: 'page-link'), class: classes.join(' '))
   end
 
-  def previous_or_next_page(page, text, classname)
-    # if page
-    #   tag(:li, link(text, url(page), class: 'page-link'), class: "page-item #{classname}")
-    # else
-    #   tag(:li, link(text, "#", class: 'page-link disabled'), class: "page-item disabled #{classname}")
-    # end
-    nil
-  end
-
   def gap
     tag(:li, link('&hellip;'.html_safe, "#", class: 'page-link'), class: 'page-item disabled')
   end

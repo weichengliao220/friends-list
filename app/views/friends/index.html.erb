@@ -1,5 +1,5 @@
-<div class="min-vh-100">
-  <div class="container flex-grow-1">
+<div class="d-flex flex-column" style="min-height: 30vh;">
+  <div class="flex-grow-1">
     <table class="table table-secondary table-striped table-borderless table-hover", style="border-radius: 10px 10px 0px 0px; border-collapse: collapse; overflow: hidden;">
       <thead>
         <tr>
@@ -29,7 +29,7 @@
       <%= link_to 'Add a new friend', new_friend_path, class:"btn btn-secondary" %>
     </div>
 
-    <div class="pagination justify-content-center mt-5">
+    <div class="pagination justify-content-center mt-3">
       <%= will_paginate @friends, renderer: Bootstrap5Renderer %>
     </div>
   </footer>
