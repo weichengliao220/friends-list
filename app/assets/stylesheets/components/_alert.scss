@@ -1,15 +1,15 @@
 .alert {
-  max-width: 300px;  // Limit the width of the alert
-  margin: 10px auto; // Center the alert horizontally and give some space from the top
-  padding: 10px;     // Reduce padding for a smaller appearance
-  font-size: 14px;   // Make text smaller
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 14px;
 }
 
 .alert svg {
-  width: 20px;  // Reduce the size of the icon
-  height: 20px; // Ensure the icon isn't too large
+  width: 20px;
+  height: 20px;
 }
 
 .alert div {
-  font-size: 14px; // Adjust font size if necessary
+  font-size: 14px;
 }

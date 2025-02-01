@@ -1,27 +1,11 @@
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-// }
-
-// footer .btn {
-//   margin-top: 10px;
-// }
-
-// footer .pagination {
-//   margin-top: 20px;
-// }
-
-/* Footer Styling */
 .footer {
-  background-color: #6c757d; /* Grey background */
-  color: white;              /* White text */
-  padding: 10px 0;           /* Vertical padding */
-  text-align: center;        /* Center the text horizontally */
-  margin-top: auto;          /* Push the footer to the bottom of the container */
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto;
 }
 
-/* Optional: To ensure the footer doesn't overlap content */
 body {
-  padding-bottom: 0px;  /* Add space at the bottom of the page */
+  padding-bottom: 0px;
 }
