@@ -1,3 +1,5 @@
+require 'will_paginate/view_helpers/action_view'
+
 class Bootstrap5Renderer < WillPaginate::ActionView::LinkRenderer
   def container_attributes
     { class: 'pagination justify-content-center' }
