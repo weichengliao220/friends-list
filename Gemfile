@@ -18,6 +18,7 @@ gem 'faker'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 gem 'bootstrap', '~> 5.0'
 gem 'hotwire-rails'
+gem 'mini_racer'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
