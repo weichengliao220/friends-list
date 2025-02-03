@@ -2,13 +2,15 @@
 
 Hello, my name is Brian Liao. Welcome to my GitHub!
 
-I just recently graduated from Le Wagon Tokyo - coding bootcamp (batch #1808), and am currently looking for a new job in the field of web development.
+I recently graduated from Le Wagon Tokyo's Web Development Coding Bootcamp (Batch #1808) and am currently seeking a junior web developer position.
 
-I spent several days working on this small side-project, which serves as a practice and review for the Ruby on Rails framework that was learned and used during the bootcamp.
+I spent several days working on this small side-project as a way to practice and reinforce my knowledge of the Ruby on Rails framework, which is learned and used during the bootcamp.
 
-For quick demonstration purpose, you can login to the app via the account below with pre-set examples of friends:
+This Friends List App allows users to easily manage their friends and is host and live on Render: https://friends-list-orxx.onrender.com
 
-Email: user@email.com
-Password: password
+For a quick demonstration purpose, you can log in to the app  using the following credentials, which include pre-set examples of friends:
+
+📧Email: user@email.com
+🔑Password: password
 
 Thank you!
