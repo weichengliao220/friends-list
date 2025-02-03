@@ -13,6 +13,6 @@ For a quick demonstration purpose, you can log in to the app  using the followin
 📧Email: user@example.com
 🔑Password: password
 
-⚠️Note: This app is hosted on a free Render instance, which spins down after inactivity. As a result, the first request after a period of inactivity may take up to a minute to load."
+⚠️Note: This app is hosted on a free Render instance, which spins down after inactivity. As a result, the first request after a period of inactivity may take up to a minute to load.
 
 Thank you!
