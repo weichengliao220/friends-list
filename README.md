@@ -10,7 +10,7 @@ This Friends List App allows users to easily manage their friends and is current
 
 For a quick demonstration purpose, you can log in to the app  using the following credentials, which provide access to a list of pre-set example friends:
 
-📧Email: user@email.com
+📧Email: user@example.com
 🔑Password: password
 
 Thank you!
