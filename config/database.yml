@@ -6,8 +6,9 @@
 #
 default: &default
   adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  encoding: unicode
+  pool: 5
+  url: <%= ENV['DATABASE_URL'] %>
 
 development:
   <<: *default
@@ -22,7 +23,4 @@ test:
 
 production:
   <<: *default
-  database: friends_list_production
-  username: <%= ENV['DATABASE_USERNAME'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: <%= ENV['DATABASE_HOST'] %>
+  url: <%= ENV['DATABASE_URL'] %>
