@@ -10,9 +10,9 @@ This Friends List App allows users to easily manage their friends and is current
 
 For a quick demonstration purpose, you can log in to the app  using the following credentials, which provide access to a list of pre-set example friends:
 
-📧Email: user@example.com
+📧Email: user@example.com<br>
 🔑Password: password
 
-⚠️Note: This app is hosted on a free Render instance, which spins down after inactivity. As a result, the first request after a period of inactivity may take up to a minute to load.
+⚠️Note: This app is hosted on a free Render instance, which spins down after inactivity. As a result, the first request after a period of inactivity may take up to 2-3 minutes to load.
 
 Thank you!
