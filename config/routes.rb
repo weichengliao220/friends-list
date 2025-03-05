@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: 'lists#index'
   # get 'home/index'
   get 'home/about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -16,5 +15,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root 'home#index'
+  root 'home#index'
 end
